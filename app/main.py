@@ -1,10 +1,6 @@
 def count_occurrences(phrase: str, letter: str) -> int:
     result = phrase.lower()
-    counter = 0
-    for phase in result:
-        if phase == letter.lower():
-            counter += 1
-    return counter
+    return result.count(letter.lower())
 print(count_occurrences("letter", "t"))
 print(count_occurrences("abc", "a"))
 print(count_occurrences("abc", "d"))
